@@ -7,4 +7,12 @@ public abstract class Funcionario implements Tributavel {
         this.nome = nome;
         this.salario = salario;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
 }
