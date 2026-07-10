@@ -15,4 +15,11 @@ public abstract class Funcionario implements Tributavel {
     public double getSalario() {
         return salario;
     }
+
+    void exibirFicha(){
+        System.out.printf("""
+                Nome: %s
+                Salário: %.2f
+                """, nome, salario);
+    }
 }
