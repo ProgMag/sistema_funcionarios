@@ -22,4 +22,6 @@ public abstract class Funcionario implements Tributavel {
                 Salário: %.2f
                 """, nome, salario);
     }
+
+    abstract double calcularSalarioFinal();
 }
