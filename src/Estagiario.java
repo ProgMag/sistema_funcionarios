@@ -5,12 +5,12 @@ public class Estagiario extends Funcionario{
     }
 
     @Override
-    public double calcularSalarioFinal() {
-        return getSalarioBase();
+    public double calcularImposto(double salario) {
+        return 0;
     }
 
     @Override
-    public double calcularImposto(double salario) {
-        return 0;
+    public double calcularSalarioFinal() {
+        return calcularSalarioLiquido(getSalarioBase());
     }
 }
