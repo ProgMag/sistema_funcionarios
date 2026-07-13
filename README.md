@@ -216,10 +216,3 @@ java Main
   final do estagiário = salário base, já que o imposto é 0%), é importante
   **calcular de verdade** via `calcularSalarioLiquido()` em vez de assumir o
   valor — isso evita bugs silenciosos se a regra de negócio mudar no futuro.
-
-## Próximos passos
-
-- Revisão aprofundada do tema (interfaces vs. classes abstratas, `default`,
-  segregação de interfaces)
-- Prova estilo universitário (10 questões, fácil → difícil)
-- Retomar o projeto pendente: **Sistema de Processamento de Pagamentos (e-commerce)**
