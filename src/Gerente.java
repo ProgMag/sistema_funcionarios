@@ -26,7 +26,8 @@ public class Gerente extends Funcionario implements Bonificavel {
     public void exibirFicha() {
         super.exibirFicha();
         System.out.printf("""
+                Imposto: %.2f
                 Salário final: %.2f
-                """, calcularSalarioFinal());
+                """, calcularImposto(getSalarioBase()),calcularSalarioFinal());
     }
 }

@@ -13,4 +13,13 @@ public class Estagiario extends Funcionario{
     public double calcularSalarioFinal() {
         return calcularSalarioLiquido(getSalarioBase());
     }
+
+    @Override
+    void exibirFicha() {
+        super.exibirFicha();
+        System.out.printf("""
+                Imposto: %.2f
+                Salário final: %.2f
+                """, calcularImposto(getSalarioBase()), calcularSalarioFinal());
+    }
 }
