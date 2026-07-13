@@ -1,4 +1,4 @@
 public interface Bonificavel {
 
-    double calcularBonificacao(double salario);
+    double calcularBonus(double salario);
 }

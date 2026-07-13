@@ -1,26 +1,26 @@
 public abstract class Funcionario implements Tributavel {
 
     private String nome;
-    private double salario;
+    private double salarioBase;
 
     public Funcionario(String nome, double salario) {
         this.nome = nome;
-        this.salario = salario;
+        this.salarioBase = salario;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public double getSalario() {
-        return salario;
+    public double getSalarioBase() {
+        return salarioBase;
     }
 
     void exibirFicha(){
         System.out.printf("""
                 Nome: %s
                 Salário: %.2f
-                """, nome, salario);
+                """, nome, salarioBase);
     }
 
     abstract double calcularSalarioFinal();
