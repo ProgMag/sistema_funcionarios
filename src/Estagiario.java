@@ -8,4 +8,9 @@ public class Estagiario extends Funcionario{
     public double calcularSalarioFinal() {
         return getSalarioBase();
     }
+
+    @Override
+    public double calcularImposto(double salario) {
+        return 0;
+    }
 }
